@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Имя Фамилия — Портфолио-резюме</title>
+  <meta name="description" content="Портфолио-резюме: опыт, навыки, проекты и контакты." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Skip link для доступности -->
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top">ИБ</a>
+
+      <nav class="nav" aria-label="Главная навигация">
+        <button class="nav__burger" id="burger" aria-expanded="false" aria-controls="navList">
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <span class="sr-only">Открыть меню</span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link" href="#about">Обо мне</a></li>
+          <li><a class="nav__link" href="#experience">Опыт</a></li>
+          <li><a class="nav__link" href="#education">Образование</a></li>
+          <li><a class="nav__link" href="#skills">Навыки</a></li>
+          <li><a class="nav__link" href="#projects">Проекты</a></li>
+          <li><a class="nav__link" href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Переключить тему">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Открыт(а) к стажировке / работе</p>
+          <h1 class="hero__title">Имя Фамилия</h1>
+          <p class="hero__subtitle">
+            <strong>Frontend / Web Developer</strong> (или твоя роль)
+            <br />Город, страна • Готов(а) к удалёнке/офису
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Смотреть проекты</a>
+            <a class="btn btn--ghost" href="#contact">Связаться</a>
+          </div>
+
+          <ul class="hero__meta">
+            <li>📧 <a href="mailto:bondarchukivan89@gmail.com">bondarchukivan89@gmail.com</a></li>
+            <li>💬 <a href="https://t.me/bonda_anaconda" target="_blank" rel="noreferrer">Telegram</a></li>
+            <li>💻 <a href="https://github.com/Default8914" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__card reveal">
+          <div class="avatar" aria-hidden="true">🙂</div>
+          <div>
+            <p class="muted">Кратко обо мне</p>
+            <p class="lead">
+             Делаю адаптивные сайты, люблю чистую верстку и JS-интерактив. UX/UI Разработчик, дизайнер интерфейсов.
+            </p>
+            <div class="pill-row">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Git</span>
+              <span class="pill">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+        <p class="section__text">
+          Работа с графическими редакторами. Владение навыками работы в Adobe Photoshop, Illustrator, Indesign, Figma, Blender. Навыки редактирования изображений, создания векторной графики, разработки логотипов, вёрстки сайтов. Небольшой опыт в After Effects, Premiere, Vegas
+        </p>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3 class="card__title">Сильные стороны</h3>
+            <ul class="list">
+              <li>Аккуратная адаптивная верстка (Mobile First)</li>
+              <li>JS-интерактив: формы, модалки, темы, фильтры</li>
+              <li>Умение работать по макету (Figma/аналоги)</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Интересы</h3>
+            <ul class="list">
+              <li>UI/UX, типографика</li>
+              <li>Оптимизация и доступность</li>
+              <li>Пет-проекты и обучение</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title">Опыт</h2>
+        <p class="section__text muted">Если опыта нет — укажи учебные проекты/фриланс/волонтерство.</p>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <h3 class="timeline__title">Компания / Проект — Роль</h3>
+              <p class="timeline__meta">Месяц ГГГГ — Месяц ГГГГ • Город/Удалённо</p>
+              <ul class="list">
+                <li>Что делал(а): 1–2 конкретных задачи</li>
+                <li>Стек: HTML, CSS, JS …</li>
+                <li>Результат: цифры/улучшения (если есть)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <h3 class="timeline__title">Учебный проект — Frontend</h3>
+              <p class="timeline__meta">ГГГГ • Университет/Курс</p>
+              <ul class="list">
+                <li>Адаптивная верстка по макету</li>
+                <li>Форма обратной связи + валидация</li>
+                <li>Темная/светлая тема, сохранение выбора</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section__title">Образование</h2>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3 class="card__title">Университет / Колледж</h3>
+            <p class="muted">Специальность • Год начала — Год окончания</p>
+            <p>Коротко: ключевые дисциплины/проекты/достижения.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Курсы / Сертификаты</h3>
+            <ul class="list">
+              <li>Курс 1 — платформа, год</li>
+              <li>Курс 2 — платформа, год</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Навыки</h2>
+
+          <div class="skills-filter">
+            <label class="sr-only" for="skillFilter">Фильтр навыков</label>
+            <select id="skillFilter">
+              <option value="all">Все</option>
+              <option value="frontend">Frontend</option>
+              <option value="tools">Инструменты</option>
+              <option value="soft">Soft</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="skill-grid" id="skillGrid">
+          <div class="skill reveal" data-skill="frontend">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, Flex/Grid, адаптивность, BEM</p>
+          </div>
+
+          <div class="skill reveal" data-skill="frontend">
+            <h3>JavaScript</h3>
+            <p>DOM, события, формы, localStorage, fetch (база)</p>
+          </div>
+
+          <div class="skill reveal" data-skill="tools">
+            <h3>Инструменты</h3>
+            <p>Git/GitHub, Figma, VS Code</p>
+          </div>
+
+          <div class="skill reveal" data-skill="soft">
+            <h3>Soft skills</h3>
+            <p>Коммуникация, ответственность, самообучение</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Проекты</h2>
+        <p class="section__text">Добавь 2–4 проекта. Лучше реальные ссылки: GitHub Pages / Netlify / Vercel.</p>
+
+        <div class="cards cards--projects">
+          <article class="card project reveal">
+            <div class="project__top">
+              <h3 class="card__title">Проект 1 — Лендинг</h3>
+              <span class="tag">HTML/CSS/JS</span>
+            </div>
+            <p class="muted">Коротко: что за проект и какие фичи.</p>
+            <ul class="list">
+              <li>Mobile First + адаптив</li>
+              <li>Скролл-анимации</li>
+              <li>Форма с валидацией</li>
+            </ul>
+            <div class="project__links">
+              <a class="link" href="https://github.com/username/project" target="_blank" rel="noreferrer">Код</a>
+              <a class="link" href="https://example.com" target="_blank" rel="noreferrer">Демо</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__top">
+              <h3 class="card__title">Проект 2 — Мини-приложение</h3>
+              <span class="tag">JS</span>
+            </div>
+            <p class="muted">Например: трекер задач, заметки, калькулятор и т.д.</p>
+            <div class="project__links">
+              <a class="link" href="https://github.com/username/project2" target="_blank" rel="noreferrer">Код</a>
+              <a class="link" href="https://example.com" target="_blank" rel="noreferrer">Демо</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3 class="card__title">Связаться со мной</h3>
+            <ul class="list">
+              <li>📧 Email: <a href="bondarchukivan89@gmail.com">bondarchukivan89@gmail.com</a></li>
+              <li>💬 Telegram: <a href="https://t.me/bonda_anaconda" target="_blank" rel="noreferrer">@bonda_anaconda</a></li>
+              <li>💻 GitHub: <a href="https://github.com/Default8914" target="_blank" rel="noreferrer">https://github.com/Default8914</a></li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Форма обратной связи</h3>
+
+            <form class="form" id="contactForm" novalidate>
+              <label class="form__field">
+                <span>Имя</span>
+                <input name="name" type="text" placeholder="Иван" minlength="2" required />
+                <small class="form__error" data-error-for="name"></small>
+              </label>
+
+              <label class="form__field">
+                <span>Email</span>
+                <input name="email" type="email" placeholder="you@example.com" required />
+                <small class="form__error" data-error-for="email"></small>
+              </label>
+
+              <label class="form__field">
+                <span>Сообщение</span>
+                <textarea name="message" rows="4" placeholder="Привет! Хочу обсудить..." minlength="10" required></textarea>
+                <small class="form__error" data-error-for="message"></small>
+              </label>
+
+              <button class="btn" type="submit">Отправить</button>
+              <p class="form__hint muted" id="formHint"></p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Наверх">↑</button>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>
+        Нейросеть: <strong>ChatGPT</strong> — <strong>15 минут</strong>
+        <!-- поменяй “15 минут” на реальное время -->
+      </p>
+      <p>
+        JavaScript-функционал: <strong>переключение темы, бургер-меню, фильтр навыков, валидация формы, анимация при прокрутке, кнопка “наверх”</strong>
+      </p>
+      <p class="muted">© <span id="year"></span> Бондарчук Иван</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
